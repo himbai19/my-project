@@ -34,9 +34,9 @@ jobs:
         arguments: build
 
     - name: Docker Build and Push
-      uses: himbai19/githubactions
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: docker-hub-repo/image-name
+        image: himbai19/githubactions
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
